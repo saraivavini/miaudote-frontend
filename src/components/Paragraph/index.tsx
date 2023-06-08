@@ -17,12 +17,13 @@ type ParagraphProps = {
   children?: React.ReactNode;
   variant?: keyof typeof variantToClassNameMap;
   color?: TextColor;
+  className?: string;
 };
 
 export default function Paragraph(props: ParagraphProps) {
-  const { children, variant = 'body-md', color = 'black' } = props;
+  const { children, variant = 'body-md', color = 'default' } = props;
 
-  const className = `${variantToClassNameMap[variant]} ${textColorToClassName[color]}`;
+  const className = `${variantToClassNameMap[variant]} ${textColorToClassName[color]} ${props.className}`;
 
   return React.createElement('p', { className }, children);
 

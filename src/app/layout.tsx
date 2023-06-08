@@ -1,5 +1,47 @@
+import { Heading, Paragraph } from '@/components';
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Link from 'next/link';
+
+function Navbar() {
+  const menuLinks = [
+    {
+      name: 'Início',
+      path: '/',
+    },
+    {
+      name: 'Adote',
+      path: '#adopt',
+    },
+    {
+      name: 'Abrigos',
+      path: '#shelters',
+    },
+    {
+      name: 'Sobre',
+      path: '#About',
+    }
+  ];
+
+  return (
+    <div className="flex justify-between px-32 py-8 bg-primary-900">
+      <div>
+        <Heading level="h6" color="white">
+          Miaudote
+        </Heading>
+      </div>
+      <div className="flex space-x-8">
+        {menuLinks.map((link) => (
+          <Link key={link.path} href={link.path}>
+            <Paragraph variant='button-md' color="white">
+              {link.name}
+            </Paragraph>
+          </Link>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +57,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
