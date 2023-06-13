@@ -2,14 +2,14 @@ import { TextColor, textColorToClassName } from '@/utils/colors';
 import React from 'react';
 
 const variantToClassNameMap = {
-  subtitle: 'text-[16px] font-medium',
-  'body-sm': 'text-[14px]/[20px] font-regular',
-  'body-md': 'text-[16px]/[24px] font-regular',
-  'body-lg': 'text-[18px]/[28px] font-regular',
-  'button-sm': 'text-[14px]/[18px] font-bold',
-  'button-md': 'text-[16px]/[20px] font-bold',
-  'button-lg': 'text-[18px]/[24px] font-bold',
-  'caption': 'text-[12px]/[16px] font-regular',
+  subtitle: 'text-[1rem] font-medium',
+  'body-sm': 'text-sm font-regular',
+  'body-md': 'text-base font-regular',
+  'body-lg': 'text-lg font-regular',
+  'button-sm': 'text-[0.875rem]/[1.125rem] font-bold',
+  'button-md': 'text-[1rem]/[1.25rem] font-bold',
+  'button-lg': 'text-[1.125rem]/[1.5rem] font-bold',
+  'caption': 'text-[0.75rem]/[1rem] font-regular',
 }
 
 

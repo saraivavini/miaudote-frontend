@@ -2,12 +2,12 @@ import { TextColor, textColorToClassName } from '@/utils/colors';
 import React from 'react';
 
 const levelToClassNameMap = {
-  h1: 'text-[56px]/[64px] font-bold',
-  h2: 'text-[48px]/[56px] font-bold',
-  h3: 'text-[40px]/[48px] font-bold',
-  h4: 'text-[32px]/[40px] font-medium',
-  h5: 'text-[24px]/[32px] font-medium',
-  h6: 'text-[20px]/[24px] font-medium',
+  h1: 'text-[3.5rem]/[4rem] font-bold',
+  h2: 'text-[3rem]/[3.5rem] font-bold',
+  h3: 'text-[2.5rem]/[3rem] font-bold',
+  h4: 'text-[2rem]/[2.5rem] font-medium',
+  h5: 'text-[1.5rem]/[2rem] font-medium',
+  h6: 'text-[1.25rem]/[1.5rem] font-medium',
 }
 
 type HeadingProps = {

@@ -28,6 +28,9 @@ module.exports = {
           900: '#00404D',
         }
       },
+      backgroundImage: {
+        'home-banner': "url('/assets/home-banner.png')"
+      }
     },
   },
   plugins: [],

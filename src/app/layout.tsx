@@ -30,7 +30,7 @@ function Navbar() {
           Miaudote
         </Heading>
       </div>
-      <div className="flex space-x-8">
+      <div className="hidden md:flex space-x-8">
         {menuLinks.map((link) => (
           <Link key={link.path} href={link.path}>
             <Paragraph variant='button-md' color="white">
