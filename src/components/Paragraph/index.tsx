@@ -5,7 +5,7 @@ const variantToClassNameMap = {
   subtitle: 'text-[1rem] font-medium',
   'body-sm': 'text-sm font-regular',
   'body-md': 'text-base font-regular',
-  'body-lg': 'text-lg font-regular',
+  'body-lg': ' text-lg font-regular',
   'button-sm': 'text-[0.875rem]/[1.125rem] font-bold',
   'button-md': 'text-[1rem]/[1.25rem] font-bold',
   'button-lg': 'text-[1.125rem]/[1.5rem] font-bold',

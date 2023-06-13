@@ -7,7 +7,7 @@ function Navbar() {
   const menuLinks = [
     {
       name: 'Início',
-      path: '/',
+      path: '#home',
     },
     {
       name: 'Adote',
@@ -19,12 +19,12 @@ function Navbar() {
     },
     {
       name: 'Sobre',
-      path: '#About',
+      path: '#about',
     }
   ];
 
   return (
-    <div className="flex justify-between px-32 py-8 bg-primary-900">
+    <div className="flex justify-between px-5 py-8 bg-primary-900 md:px-32 ">
       <div>
         <Heading level="h6" color="white">
           Miaudote

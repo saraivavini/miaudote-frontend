@@ -30,6 +30,22 @@ module.exports = {
       },
       backgroundImage: {
         'home-banner': "url('/assets/home-banner.png')"
+      },
+      fontSize: {
+        h1: ['3.5rem', '4rem'],
+        h2: ['3rem', '3.5rem'],
+        h3: ['2.5rem', '3rem'],
+        h4: ['2rem', '2.5rem'],
+        h5: ['1.5rem', '2rem'],
+        h6: ['1.25rem', '1.5rem'],
+        subtitle: ['1rem', 'auto'],
+        caption: ['0.75rem', '1rem'],
+        'body-sm': ['0.875rem', '1.25rem'],
+        'body-md': ['1rem', '1.5rem'],
+        'body-lg': ['1.125rem', '1.75rem'],
+        'button-sm': ['0.875rem', '1.125rem'],
+        'button-md': ['1rem', '1.25rem'],
+        'button-lg': ['1.125rem', '1.5rem'],
       }
     },
   },
